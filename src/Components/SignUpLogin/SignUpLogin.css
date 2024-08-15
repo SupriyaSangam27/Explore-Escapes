@@ -1,0 +1,152 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Max width for larger screens */
+    margin-top: 80px;
+    background: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 150px;
+}
+
+.logHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text {
+    color: #212EA0;
+    font-size: 32px; /* Adjust font size for better responsiveness */
+    font-weight: 700;
+    text-align: center;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background: #212EA0;
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 480px; /* Max width for larger screens */
+    height: 60px;
+    background: #eaeaea;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.input img {
+    margin: 0 15px; /* Reduced margin for better spacing on small screens */
+}
+
+.input input {
+    height: 100%;
+    width: calc(100% - 60px); /* Adjust width to account for icon */
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 16px; /* Adjust font size for better responsiveness */
+}
+
+.forgot-password {
+    padding-left: 62px;
+    margin-top: 27px;
+    color: #797979;
+    font-size: 16px; /* Adjust font size for better responsiveness */
+}
+
+.forgot-password span {
+    color: #212EA0;
+    cursor: pointer;
+}
+
+.submit-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    gap: 20px; /* Reduced gap for better spacing on small screens */
+    margin: 60px auto;
+    justify-content: center; /* Center buttons on smaller screens */
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 220px; /* Max width for larger screens */
+    height: 50px; /* Adjust height for better responsiveness */
+    color: #fff;
+    background: #212EA0;
+    border-radius: 50px;
+    font-size: 16px; /* Adjust font size for better responsiveness */
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gray {
+    background: #EAEAEA;
+    color: #676767;
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .text {
+        font-size: 36px; /* Adjust font size for tablets */
+    }
+
+    .input {
+        max-width: 400px; /* Adjust max width for tablets */
+    }
+
+    .input input {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+
+    .forgot-password {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+
+    .submit {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .text {
+        font-size: 28px; /* Adjust font size for mobile devices */
+    }
+
+    .input {
+        max-width: 100%; /* Full width on mobile devices */
+    }
+
+    .input input {
+        font-size: 16px; /* Adjust font size for mobile devices */
+    }
+
+    .forgot-password {
+        font-size: 14px; /* Adjust font size for mobile devices */
+    }
+
+    .submit {
+        font-size: 14px; /* Adjust font size for mobile devices */
+    }
+}

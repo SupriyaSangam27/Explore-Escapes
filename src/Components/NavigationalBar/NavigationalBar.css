@@ -1,0 +1,93 @@
+nav {
+    width: 100%;
+    color: #fff;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: transparent; /* Initially transparent */
+    transition: background-color 0.5s; /* Smooth transition for background */
+}
+
+.logo {
+    width: 400px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .btn {
+    background-color: #0071c2;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-nav {
+    background: #212EA0;
+    transition: 0.5s;
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        /* top: 60px; */
+        left: 0;
+        width: 100%;
+        background-color: #212EA0; /* Background color for mobile menu */
+        padding: 10px 0;
+        transform: translateY(-100%); /* Hide menu by default */
+        transition: transform 0.1s ease;
+    }
+
+    nav ul.active {
+        transform: translateY(0); /* Show menu when active */
+        top: 40px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle on small screens */
+    }
+
+    .navbar .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,64 @@
+.services {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+  }
+  
+  .service {
+    flex-basis: 100%; /* Full width on mobile screens */
+    position: relative;
+    margin-bottom: 20px; /* Margin between items on smaller screens */
+  }
+  
+  .service img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+  }
+  
+  .caption img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .service:hover .caption {
+    opacity: 1;
+    padding-top: 0;
+  }
+  
+  /* Media Queries for Tablets */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .service {
+      flex-basis: 48%; /* Two items per row on tablets */
+      margin-bottom: 20px; /* Margin between items */
+    }
+  }
+  
+  /* Media Queries for Desktops */
+  @media (min-width: 1024px) {
+    .service {
+      flex-basis: 31%; /* Three items per row on desktops */
+      margin-bottom: 20px; /* Margin between items */
+    }
+  }

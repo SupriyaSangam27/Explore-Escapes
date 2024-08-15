@@ -1,0 +1,151 @@
+.searchItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; /* Added padding to ensure content isn't too close to edges */
+  margin-bottom: 10%;
+}
+
+.searchItem {
+  border: 1px solid lightgray;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px); /* Default: Two items per row, adjusting for the gap */
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-5px);
+  margin-bottom: 10px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .searchItem {
+    width: 100%; /* On smaller screens, take full width */
+  }
+}
+
+.siImg {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.siDesc, .siDetails {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.siBadge {
+  background-color: #ff9800;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.siTitle {
+  font-size: 20px;
+  color: #0071c2;
+}
+
+.siDistance,
+.siTaxiOp,
+.siSubtitle,
+.siCancelOp,
+.siCancelOpSubtitle {
+  font-size: 14px;
+}
+
+.siTaxiOp {
+  background-color: #008009;
+  color: white;
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.siDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.siRating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.siRating > span {
+  font-weight: 500;
+}
+
+.siRating > button {
+  background-color: #003580;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.siDetailTexts {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.siOldPrice {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.siPrice {
+  font-size: 24px;
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.siTaxOp {
+  font-size: 14px;
+  color: gray;
+}
+
+.siCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.siCheckButton:hover {
+  background-color: #005fa3;
+}

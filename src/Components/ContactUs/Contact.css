@@ -1,0 +1,232 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Contact container */
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+/* Contact column */
+.contact-col {
+    flex-basis: 48%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.contact-col:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact heading */
+.contact-col h3 {
+    color: #000f38;
+    font-weight: 500;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Contact icons */
+.contact-col img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Contact text */
+.contact-col p {
+    max-width: 450px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Contact list items */
+.contact-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #000f38;
+    font-weight: 500;
+}
+
+.contact-col ul li img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+/* Form styles */
+.contact form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #000f38;
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: 100%;
+    background: #ebecfe;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: none;
+    border-color: #000f38;
+}
+
+/* Button styles */
+.contact form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background: #000f38;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form button img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.contact form button:hover {
+    background: #02206d;
+}
+
+/* Result message */
+.contact-col span {
+    display: block;
+    margin: 20px 0;
+    font-weight: 500;
+    color: #000f38;
+}
+
+/* Map container */
+.map-container {
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto 150px; /* Add margin-bottom to create space between the map and the footer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Medium screens (tablets, 768px and above) */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .contact-col {
+        flex-basis: 100%;
+    }
+
+    .contact-col h3 {
+        font-size: 24px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact form button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .map-container {
+        width: 90%;
+        height: 400px;
+    }
+}
+
+/* Small screens (phones, 480px and below) */
+@media (max-width: 480px) {
+    .contact-col h3 {
+        font-size: 20px;
+    }
+
+    .contact-col img {
+        width: 25px;
+    }
+
+    .contact-col ul li img {
+        width: 20px;
+    }
+
+    .contact-col p {
+        max-width: 100%;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact form button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 300px;
+    }
+}

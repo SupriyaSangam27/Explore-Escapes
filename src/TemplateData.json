@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "image": "https://i0.wp.com/www.traveling-pari.com/wp-content/uploads/2022/08/Toronto-Skyline.jpg?w=1000&ss",
+        "title": "Toronto Island",
+        "description": "Toronto Island, a group of small islands in Lake Ontario, offers scenic parklands, beaches, and recreational activities just off downtown Toronto. It's accessible by ferry and features attractions like Centreville Amusement Park, biking trails, and serene natural landscapes. The islands provide a peaceful retreat from the bustling city with stunning views of Toronto's skyline.",
+        "price": 135 
+    },
+    {
+        "id": 2,
+        "image": "https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/homepage/niagarafallsstatepark-maid-of-the-mist-2024-opening-desktop.jpg",
+        "title": "Niagra Falls",
+        "price": 250,
+        "description":"Niagara Falls is a group of three waterfalls located on the border between Ontario, Canada, and New York, USA. The falls consist of Horseshoe Falls, American Falls, and Bridal Veil Falls, with Horseshoe Falls being the largest and most powerful. Known for their breathtaking beauty, the falls attract millions of visitors annually. Popular activities include boat tours like the Maid of the Mist and viewing experiences from observation decks. Niagara Falls also offers opportunities for exploring nearby parks and enjoying various entertainment options."
+    },
+    {
+        "id": 3,
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/7d/1f/23/high-park.jpg?w=1000&h=-1&s=1",
+        "title": "High Park",
+        "price": 20,
+        "description":"Popular urban oasis offers a variety of outdoor recreation including ice-skating, baseball games, nature hikes and exploring the park's greenhouse."
+    },
+    {
+        "id": 4,
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/4e/07/17/in-the-queens-lantern.jpg?w=1200&h=-1&s=1",
+        "title": "Canadian Museum of Nature",
+        "price": 40,
+        "description":"Let the wonders of nature inspire you at the Canadian Museum of Nature, housed in a beautiful heritage “castle” just blocks from Parliament Hill in Ottawa!  Embark on a captivating exploration of the natural world, featuring dinosaurs, mammals, dazzling minerals, aquatic ecosystems, Canada’s Arctic, live bugs, and so much more! Enjoy hands-on activities for curious minds of all ages. Visit nature.ca to book your visit and learn more!"
+    },
+    {
+        "id": 5,
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/ef/81/71/20180729-105047-largejpg.jpg?w=1000&h=-1&s=1",
+        "title": "Grotto",
+        "price": 80,
+        "description":"The Grotto, in Bruce Peninsula National Park, is one of the top tourism attractions in Ontario. A shoreline sea cave with the beautiful blue waters, the Grotto is a unique natural wonder and memorable place to experience. It is also a very popular and busy location, especially during the peak season of July and August and on long weekends. At those times, the parking lot will fill up and you may not be able to access the Grotto."
+    }
+]
